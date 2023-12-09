@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <title>{{app.name}} main page</title>
+</head>
+<body>
+    <div class="mx-5 text-center">
+        <h1 style="color: aliceblue;">{{ app.name }} main page</h1> 
+        <a href="/"><button class="btn btn-primary">Back to Home</button></a>
+    </div>
+</body>
+</html>
+{% endblock %}

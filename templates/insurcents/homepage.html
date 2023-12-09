@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<head>
+    <title>insurcents-home</title>
+</head>
+{% block content%}
+<div style="color: #66fcf1;" class="text-center">
+    <div class="display-4">
+        <h1 class="display-4">Explore</h1>
+        <p>Various applications below</p>
+    </div>
+    <div class="d-flex card-deck mx-5" style="color: black;">
+        {% for app in app_list %}
+        <a href="apps{{ app.link }}" class="card">
+            <h2 class="card-header">{{app.name}}</h2>
+            <p class="card-body">{{ app.description }}</p>
+        </a>
+        {% endfor %}       
+    </div>
+</div>
+{% endblock%}

@@ -1,0 +1,21 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+
+<body style="background-color: rgb(36, 36, 36);">
+    <header class="">
+        <nav class="nav align-items-center justify-content-between p-4">
+            <button class="btn"><a href="">menu</a></button>
+            <a href="/" style="text-decoration: none;"><h1>insurcents</h1></a>
+            <button class="btn"><a style="text-decoration: none;" href="http://exodera.github.io/">github</a></button>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="fixed-bottom">
+        <p class="text-center text-muted"> ltd © 2023 insurcents </p>
+    </footer>
+</body>
+</html>
