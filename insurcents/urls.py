@@ -21,5 +21,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.base),
-    path('apps/', include("allapps.urls"))
+    path('apps/', include("allapps.urls")),
+    path('signup/', include("signup.urls")),
+
 ]
